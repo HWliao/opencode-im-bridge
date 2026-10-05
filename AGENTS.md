@@ -4,6 +4,24 @@
 **Commit:** 896c349
 **Branch:** main
 
+## Agent skills
+
+### Issue tracker
+
+Issues and specs are tracked in GitHub Issues for `HWliao/opencode-im-bridge`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use the default labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout: root `GLOSSARY.md` and `docs/adr/`. See `docs/agents/domain.md`.
+
+### 项目语言偏好
+
+默认使用中文进行沟通，并优先使用中文撰写项目文档及 Issue/Spec 内容；技术名称、代码标识符、命令和 API 名称保留原有形式。
+
 ## What This Project Does
 
 `opencode-im-bridge` bridges IM chats (Feishu, QQ, Telegram) with opencode TUI sessions. Messages sent in a chat flow into opencode as if typed in the terminal. Agent replies stream back to the chat — `StreamingBridge` accumulates `TextDelta` events and queues them into card updates (Feishu) or direct messages (QQ/Telegram), while tool and sub-agent status are shown via separate cards.
